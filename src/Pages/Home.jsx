@@ -1,9 +1,12 @@
+import FlashSale from "@/components/FlashSale/FlashSale";
+import Hero from "@/components/Hero/Hero";
 
 const Home = () => {
   return (
-    <div className="text-lg text-orange-400 ">
-     We are at Home 🎃
-    </div>
+    <>
+    <Hero/>
+    <FlashSale/>
+    </>
   );
 };
 
