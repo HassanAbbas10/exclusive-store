@@ -6,6 +6,7 @@ import Hero from "@/components/Hero/Hero";
 import ProductCountdown from "@/components/ProductCountdown/ProductCountdown";
 import NewArrival from "@/components/NewArrival/NewArrival";
 import NewArrivalGrid from "@/components/NewArrival/NewArrivalGrid";
+import ArrivalIcons from "@/components/NewArrival/ArrivalIcons";
 const Home = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const Home = () => {
     <ExploreItems/>
     <NewArrival/>
     <NewArrivalGrid/>
+    <ArrivalIcons/>
     </>
   );
 };
