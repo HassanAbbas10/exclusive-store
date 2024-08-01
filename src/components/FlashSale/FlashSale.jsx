@@ -74,7 +74,11 @@ const FlashSale = () => {
         </div>
       </div>
       <Cards datas={data} />
-{console.log(data)}
+      <div className="flex items-center justify-center m-10 ">
+      <button className="sm:px-3 px-2 sm:py-3 py-2  text-white bg-red-500 w-[12rem] flex items-center justify-center h-full rounded-sm">
+        View All Products
+      </button>
+      </div>
     </div>
   );
 };

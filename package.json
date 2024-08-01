@@ -15,6 +15,7 @@
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "@radix-ui/react-slot": "^1.0.2",
+    "@reacticons/ionicons": "^7.1.0",
     "@shadcn/ui": "^0.0.4",
     "axios": "^1.7.2",
     "class-variance-authority": "^0.7.0",
