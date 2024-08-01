@@ -5,7 +5,7 @@ import FlashSale from "@/components/FlashSale/FlashSale";
 import Hero from "@/components/Hero/Hero";
 import ProductCountdown from "@/components/ProductCountdown/ProductCountdown";
 import NewArrival from "@/components/NewArrival/NewArrival";
-
+import NewArrivalGrid from "@/components/NewArrival/NewArrivalGrid";
 const Home = () => {
   return (
     <>
@@ -16,6 +16,7 @@ const Home = () => {
     <ProductCountdown/>
     <ExploreItems/>
     <NewArrival/>
+    <NewArrivalGrid/>
     </>
   );
 };
