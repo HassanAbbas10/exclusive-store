@@ -26,11 +26,11 @@ const Footer = () => {
                 <div className="flex items-center w-12 rounded-md border-slate-700 shadow-sm sm:w-full ">
                   <input
                     type="text"
-                    className="border-gray-700 sm:ml-0 ml-[5rem] border-2 items-center justify-center bg-slate-800 border-bg flex-grow px-2 focus:px-4 duration-700 py-1 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-200  placeholder:text-sm"
+                    className="border-gray-700 sm:ml-0 ml-[5rem] border-2 items-center justify-center bg-black border-bg flex-grow px-2 focus:px-4 duration-700 py-1 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-200  placeholder:text-sm"
                     placeholder="Enter your mail"
                   />
                   <button className="sm:-ml-10 -ml-8 sm:px-2  bg-transparent hover:bg-transparent rounded-r-xl focus:outline-none focus:ring-2 focus:ring-transparent ">
-                    <SendSharpIcon />
+                    <SendSharpIcon style={{color:"white"}}/>
                   </button>
                 </div>
               </section>

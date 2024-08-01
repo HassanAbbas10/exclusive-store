@@ -36,7 +36,7 @@ const FlashSale = () => {
       <div>
         <div>
           <div className="sm:pl-[8rem] sm:gap-5 gap-2 pl-[2rem] mt-5 flex flex-col sm:flex-row items-center justify-start">
-            <span className="tracking-wider text-bold text-2xl">
+            <span className="tracking-wider text-bold text-3xl font-bold">
               Flash Sales
             </span>
             <div className="flex flex-row gap-3">

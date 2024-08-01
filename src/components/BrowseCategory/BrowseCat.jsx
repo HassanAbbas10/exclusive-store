@@ -14,7 +14,7 @@ const BrowseCat = () => {
       <div>
         <div>
           <div className="sm:pl-[8rem] sm:gap-5 gap-2 pl-[2rem] mt-5 flex flex-col sm:flex-row items-center justify-between">
-            <span className="tracking-wider text-bold text-2xl flex justify-start items-start">
+            <span className="tracking-wider text-bold text-3xl font-bold flex justify-start items-start">
               Browse By Category
             </span>
            
