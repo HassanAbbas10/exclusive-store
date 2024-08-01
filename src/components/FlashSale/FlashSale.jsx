@@ -12,7 +12,7 @@ const FlashSale = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://fakestoreapi.com/products');
+        const response = await axios.get('https://fakestoreapi.com/products?limit=4');
         setData(response.data);
       } catch (error) {
         setError(error);

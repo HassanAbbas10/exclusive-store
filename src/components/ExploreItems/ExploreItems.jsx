@@ -1,9 +1,10 @@
 import Rec from "../../assets/Rec.svg";
 import { useState, useEffect } from "react";
-
+import EastIcon from "@mui/icons-material/East";
+import WestIcon from "@mui/icons-material/West";
 import Cards from "../Cards/Cards";
 import axios from "axios";
-const BestSelling = () => {
+const ExploreItems = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -11,7 +12,7 @@ const BestSelling = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://fakestoreapi.com/products/category/electronics?limit=4");
+        const response = await axios.get('https://fakestoreapi.com/products/category/electronics?limit=8');
         setData(response.data);
       } catch (error) {
         setError(error);
@@ -21,7 +22,7 @@ const BestSelling = () => {
     };
 
     fetchData();
-  }, []);
+  }, []); 
 
   if (loading) return <p className="mx-auto">Loading 🎃</p>;
   if (error) return <p className="mx-auto">Error ❌ {error.message}</p>;
@@ -30,26 +31,30 @@ const BestSelling = () => {
     <div className="flex flex-col sm:my-[8rem] w-full mx-auto">
       <div className=" sm:pl-[8rem] gap-5 pl-[2rem] flex flex-row justify-start items-center">
         <img src={Rec} />
-        <p className="text-red-500 text-xl font-semibold">This Month</p>
+        <p className="text-red-500 text-xl font-semibold">Our Products</p>
       </div>
       <div>
-        <div>
+      <div>
           <div className="sm:pl-[8rem] sm:gap-5 gap-2 pl-[2rem] mt-5 flex flex-col sm:flex-row items-center justify-between">
-            <span className="tracking-wider text-bold text-2xl flex justify-center items-center">
-              Best Selling Products
+            <span className="tracking-wider text-bold text-2xl flex justify-start items-start">
+              Explore Our Products
             </span>
-          
-            <div className="sm:ml-[15rem] space-x-4 flex justify-end items-end">
-              <button className="sm:px-3 px-2 sm:py-3 py-2 mt-4 sm:mr-[8rem] mr-[3rem] text-white bg-red-500 w-[12rem] flex items-center justify-center h-full rounded-sm">
-                View All 
-              </button>
+           
+            <div className="sm:ml-[15rem] space-x-4 sm:mr-[14rem] mr-[3rem]">
+              <WestIcon />
+              <EastIcon />
             </div>
           </div>
         </div>
       </div>
       <Cards datas={data} />
+      <div className="flex items-center justify-center m-10 ">
+      <button className="sm:px-3 px-2 sm:py-3 py-2  text-white bg-red-500 w-[12rem] flex items-center justify-center h-full rounded-sm">
+        View All Products
+      </button>
+      </div>
     </div>
   );
 };
 
-export default BestSelling;
+export default ExploreItems;

@@ -30,7 +30,7 @@ const BrowseCat = () => {
 {categories.map((categories)=>(
    
   
-        <div key={categories.id} className="group border w-[8rem] hover:bg-red-500 duration-500 border-red-500 px-[5rem] py-[1.5rem] flex flex-col justify-center items-center gap-4 rounded-md mb-4">
+        <div key={categories.id} className="group border w-[8rem] hover:bg-red-500 duration-500 border-slate-500 px-[5rem] py-[1.5rem] flex flex-col justify-center items-center gap-4 rounded-md mb-4">
           
             <IonIcon size="large" className="text-black  group-hover:text-white" name={categories.picture}/>
             
