@@ -5,7 +5,7 @@ import GppGoodIcon from '@mui/icons-material/GppGood';
 
 const ArrivalIcons = () => {
   return (
-    <div className="sm:mx-20 mb-5 sm:my-5">
+    <div className="sm:mx-20 my-10 sm:my-5">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         
         <div className="flex flex-col items-center p-4">

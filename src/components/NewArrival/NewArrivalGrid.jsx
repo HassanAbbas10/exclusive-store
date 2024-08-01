@@ -5,7 +5,7 @@ import speaker from '../../assets/wlesssp.png'
 const NewArrivalGrid = () => {
   return (
     <>
-    <div className="sm:mx-20  sm:mb-0 my-20 sm:my-5 sm:h-screen mx-auto">
+    <div className="sm:mx-20 sm:mb-0 my-24 sm:my-5 sm:h-screen mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 sm:gap-4 gap-0 ">
      
       <div className="col-span-1 md:col-span-1 bg-black h-[38rem] relative">
