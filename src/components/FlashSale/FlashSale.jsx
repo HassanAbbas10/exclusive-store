@@ -24,8 +24,8 @@ const FlashSale = () => {
     fetchData();
   }, []); 
 
-  if (loading) return <p>Loading 🎃</p>;
-  if (error) return <p>Error ❌ {error.message}</p>;
+  if (loading) return <p className="mx-auto">Loading 🎃</p>;
+  if (error) return <p className="mx-auto">Error ❌ {error.message}</p>;
 
   return (
     <div className="flex flex-col sm:my-[8rem] w-full mx-auto">

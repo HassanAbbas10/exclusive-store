@@ -18,7 +18,7 @@ const Dropdown = () => {
       <div>
         <button
           type="button"
-          className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-black text-sm font-medium text-gray-200 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="inline-flex justify-center w-full rounded-md border border-gray-600 shadow-sm focus:px-6 px-4 sm:px-6 duration-500 py-2 bg-black text-sm font-medium text-gray-200 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500"
           id="options-menu"
           aria-expanded="true"
           aria-haspopup="true"

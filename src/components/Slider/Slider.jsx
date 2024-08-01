@@ -10,10 +10,12 @@ const ImageSlider = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows:false,
+      
       };
     
       return (
-        <div className="sm:w-[55rem] w-full smmx-5 h-[20rem] p-5">
+        <div className="sm:w-[55rem] w-full mx-auto sm:mx-5 h-[20rem] sm:p-5 ">
           <Slider {...settings}>
             <div>
               <img src="https://via.placeholder.com/800x400" alt="Slide 1" className="w-full h-full object-cover" />
